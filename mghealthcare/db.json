@@ -1,0 +1,40 @@
+{
+    "product": [
+        { "id": 1, "title": "json-server", "author": "typicode" }
+      ],
+
+      "featured_brands":[
+        {
+         "id":"fb1",
+         "name":"Zandu",
+         "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
+        },    
+        {
+        "id":"fb2",
+        "name":"J&J Baby",
+        "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
+        },
+        {
+         "id":"fb3",
+         "name":"HealthKart",
+         "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
+        },    
+        {
+        "id":"fb4",
+        "name":"Dettol",
+        "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/3e371a6d-e3de-447f-aedc-c0e3d8a1d9c9.png"
+        },
+        {
+         "id":"fb5",
+         "name":"Zandu",
+         "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/89856dcd-48cb-49f8-bf52-9f7ceaf0bbec.png"
+        },    
+        {
+        "id":"fb2",
+        "name":"J&J Baby",
+        "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
+        }
+    
+      ]
+     
+}
