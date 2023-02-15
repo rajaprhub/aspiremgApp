@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import axios from "axios"
 import React, { useState } from "react"
 import styles from '../../Styles/PopularCategories.module.css'
@@ -20,12 +20,12 @@ const [loading,setLoading] = useState(false)
 React.useEffect(()=>{
 InGetData()
 },[])
-console.log(data,"oneojos")
+// console.log(data,"oneojos")
 const InGetData = ()=>{
     setLoading(true)
     GetData()
     .then((res)=>{
-        console.log("array of object",res)
+        // console.log("array of object",res)
         setData(()=>res.data[0].popular_categories)
         setLoading(false)
     })
@@ -65,7 +65,15 @@ const buttonPressNext =()=>{
     <div className={styles.container} style={{width:"100%"}}>
         <div className="one" id="PCS"  style={{scrollBehavior:"smooth",background:"white"}}>
         {
-            loading===false ? data.map((el)=>(
+            loading===false ? data.map((el,index)=>  
+            index == 1 ? (
+              <div key={el.id}>
+                <Link to="/products/skincare">
+                  <img src={el.image} alt={el.image} />
+                </Link>
+                <p>{el.name}</p>
+              </div>
+            ) :(
                 <div key={el.id}>
                     <img src={el.image} alt={el.image}/>
                     <p>{el.name}</p>

@@ -3,6 +3,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import AllRoutes from "./Routes/AllRoutes";
 import { Navbar } from "./Components/Navbar";
+import { Footer } from './Components/Footer';
 
 import axios from "axios";
 
@@ -24,10 +25,10 @@ function App() {
 
  return (
     <div className="App">
-         <h1>  store </h1>
+      
          <Navbar />
          <AllRoutes />
-         
+         <Footer />
     </div>
   );
 }

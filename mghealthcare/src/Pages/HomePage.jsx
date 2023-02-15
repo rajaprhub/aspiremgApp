@@ -11,7 +11,7 @@ import Homeopathy from "../Components/Home/Homeopathy"
 
 import React from 'react'
 
-export const Home = () => {
+export const HomePage = () => {
   return (
     <>
          
@@ -51,4 +51,4 @@ export const Home = () => {
 }
 
 
-export default Home
+export default HomePage

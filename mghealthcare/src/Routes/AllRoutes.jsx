@@ -1,11 +1,12 @@
 import {Route,Routes} from "react-router-dom" ;
-
-import Home from "../Pages/Home";
+import { ProductsPage } from "../Pages/Products";
+import HomePage from "../Pages/HomePage";
 
 const AllRoutes = () => {
     return (
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<HomePage/>} />
+        <Route path="/products/skincare" element={<ProductsPage/>} />
        
       </Routes>
     );

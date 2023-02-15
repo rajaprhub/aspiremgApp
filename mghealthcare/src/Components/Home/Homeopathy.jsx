@@ -20,12 +20,12 @@ const [loading,setLoading] = useState(false)
 React.useEffect(()=>{
 InGetData()
 },[])
-console.log(data,"oneojos")
+
 const InGetData = ()=>{
     setLoading(true)
     GetData()
     .then((res)=>{
-        console.log("array of object",res)
+        // console.log("array of object",res)
         setData(()=>res.data[7].homeopathy)
         setLoading(false)
     })

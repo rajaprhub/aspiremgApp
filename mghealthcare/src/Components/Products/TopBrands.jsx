@@ -1,22 +1,21 @@
-
 import axios from "axios"
 import React, { useState } from "react"
-import styles from '../../Styles/PopularCategories.module.css'
+import styles from '../../Styles/Products/TopBrands.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
+const GetData = ()=>{
+    return axios({
+        method:"get",
+        baseURL:"http://localhost:1010/TopBrands"
+    })
+}
 
-const GetData = () => {
-  return axios({
-    method: "get",
-    baseURL: "http://localhost:1010/Landing_page",
-  });
-};
 
-export const FeatureBrands = () => {
-
+const TopBrands =()=>{
 const [data,setData]=useState([])
 const [loading,setLoading] = useState(false)
+
 React.useEffect(()=>{
 InGetData()
 },[])
@@ -25,8 +24,7 @@ const InGetData = ()=>{
     setLoading(true)
     GetData()
     .then((res)=>{
-        // console.log("array of object",res)
-        setData(()=>res.data[3].featured_brands)
+        setData(()=>res.data)
         setLoading(false)
     })
     .catch((err)=>{
@@ -34,20 +32,21 @@ const InGetData = ()=>{
         setLoading(false)
     })
 }
-let box = document.querySelector("#FBS")
+let box = document.querySelector("#TBone")
 // console.log("box",box)
 const buttonPressRev = ()=>{
 let width =  box.clientWidth
 box.scrollLeft -= width
 }
+
 const buttonPressNext =()=>{
     let width =  box.clientWidth
     box.scrollLeft += width
 }
 
-  return (
-    <div>
-        <h3 
+return(
+    <>
+       <h3 
           style={{
             background: "transparent",
             textAlign: "left",
@@ -59,11 +58,13 @@ const buttonPressNext =()=>{
             fontSize: "16px",
             lineHeight: "22.8571px",
           }} 
-        > Feature  Brands </h3>
+        > Trending Brands </h3>
+
     <div className={styles.box}>
         <div onClick={buttonPressRev}><FontAwesomeIcon  className={styles.icon} icon={faChevronLeft}/></div>
     <div className={styles.container} style={{width:"100%"}}>
-        <div className="one" id="FBS"  style={{scrollBehavior:"smooth",background:"white"}}>
+        <div id="TBone" style={{scrollBehavior:"smooth",background:"white"}}>
+
         {
             loading===false ? data.map((el)=>(
                 <div key={el.id}>
@@ -76,9 +77,10 @@ const buttonPressNext =()=>{
     </div>
     <div onClick={buttonPressNext}><FontAwesomeIcon className={styles.icon} icon={faChevronRight}/></div>
     </div>
-    </div>
-  );
-};
+    </>
+)
+
+}
 
 
-export default FeatureBrands
+export default TopBrands
