@@ -3,38 +3,593 @@
         { "id": 1, "title": "json-server", "author": "typicode" }
       ],
 
-      "featured_brands":[
-        {
-         "id":"fb1",
-         "name":"Zandu",
-         "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
-        },    
-        {
-        "id":"fb2",
-        "name":"J&J Baby",
-        "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
+
+      "Landing_page": [
+
+         {
+          "popular_categories": [
+            {
+              "id": "PC1",
+              "name": "Top Deals",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/488e9116-bb49-4842-a1e6-e9cd02765fec.png"
+            },
+            {
+              "id": "PC6",
+              "name": "SKIN CARE",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/d31e6bfc-9848-47c5-bc45-a9268270ddc7.png"
+            },
+            {
+              "id": "PC2",
+              "name": "WINTER CARE",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/3f3b45d1-4bc3-45a8-a6e5-aa875d8d4011.png"
+            },
+            {
+              "id": "PC3",
+              "name": "VITAMINS & SUPPLEMENTS",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/2e793215-c4be-4509-97fe-17bfdf32a7ec.png"
+            },
+            {
+              "id": "PC4",
+              "name": "AYURVEDA",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/7dbe0971-a8a4-4846-9369-5cca132d219c.png"
+            },
+            {
+              "id": "PC5",
+              "name": "NUTRITIONAL DRINKS",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/56ad3298-1c41-442d-9bfe-2b6068a1cffc.png"
+            },
+            {
+              "id": "PC7",
+              "name": "Pain Relief",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/a60911a0-abca-4f13-9f3d-de036403ea75.png"
+            },
+            {
+              "id": "PC8",
+              "name": "HOMEOPATHY",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/20410ec2-e9b6-4a3b-a29f-c263cf857e5c.png"
+            }
+          ]
         },
+             
         {
-         "id":"fb3",
-         "name":"HealthKart",
-         "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
-        },    
-        {
-        "id":"fb4",
-        "name":"Dettol",
-        "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/3e371a6d-e3de-447f-aedc-c0e3d8a1d9c9.png"
+          "Trending_now": [
+            {
+              "id": "tn1",
+              "name": "Dr. Morepen Great Gut Pre & Probiotic Laxative Sachet (6.25gm Each)",
+              "packs": "box of 4 Sachets",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/41517e1d72cb4536bc98132a13970fda.jpg",
+              "mrp": 238,
+              "discount": 5,
+              "price": 226
+            },
+            {
+              "id": "tn2",
+              "name": "Hamdard Joshina Syrup",
+              "packs": "bottle of 200ml Syrup",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/ilivtrnqcgvfavninb00.jpg",
+              "mrp": 130,
+              "discount": 7,
+              "price": 120
+            },
+            {
+              "id": "tn3",
+              "name": "Dolo 650 Tablet",
+              "packs": "bottle of 200ml Syrup",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/mu5bahqxfrp28cut6que.jpg",
+              "mrp": 29,
+              "discount": 18,
+              "price": 24
+            },
+            {
+              "id": "tn4",
+              "name": "Keraglo Men Tablet",
+              "packs": "bottle of 30 tablets",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/ic22szqv5mq6pow4iqlu.png",
+              "mrp": 642,
+              "discount": 15,
+              "price": 546
+            },
+            {
+              "id": "tn5",
+              "name": "Boroline Cream",
+              "packs": "tube of 20 gm cream",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/kgbk3tvgjvcgjmqws6cp.jpg",
+              "mrp": 42,
+              "discount": 2,
+              "price": 41
+            },
+            {
+              "id": "tn6",
+              "name": "Revital H Men Multivitamin",
+              "packs": "bottle of 60 capsules",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/jmuuryvgit6mwwolt0ea.jpg",
+              "mrp": 550,
+              "discount": 15,
+              "price": 468
+            },
+            {
+              "id": "tn7",
+              "name": "Dettol Antiseptic Disinfectant Liquid",
+              "packs": "bottle of 60 capsules",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/mhxjvzj7mwka2epq1mg3.jpg",
+              "mrp": 364,
+              "discount": 6,
+              "price": 343
+            },
+            {
+              "id": "tn8",
+              "name": "Seven Seas Original Cod-Liver Oil Capsule",
+              "packs": "bottle of 60 capsules",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/hruygy5lw0ivyqenv9ev.jpg",
+              "mrp": 351,
+              "discount": 11,
+              "price": 310
+            },
+            {
+              "id": "tn9",
+              "name": "Dr Morepen BG 03 Gluco One Glucose Monitoring System",
+              "packs": "box of 1 kit",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/mhxjvzj7mwka2epq1mg3.jpg",
+              "mrp": 1164,
+              "discount": 6,
+              "price": 500
+            },
+            {
+              "id": "tn10",
+              "name": "Tata 1mg Vaporizer Steam Inhaler",
+              "packs": "box of 1 unit",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/59a0b3650352424ab1244ac830a5fbf5.jpg",
+              "mrp": 595,
+              "discount": 52,
+              "price": 285
+            }
+          ]
         },
+
         {
-         "id":"fb5",
-         "name":"Zandu",
-         "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/89856dcd-48cb-49f8-bf52-9f7ceaf0bbec.png"
-        },    
+          "Breakfast":[
+            {
+              "id":"bt1",
+              "name":"GAIA Crunchy Muesli Nutty Delight",
+              "packs":"jar of 1kg Muesli",
+              "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/efwitrii0sjwvdgekbbx.jpg",
+              "mrp":238,
+              "discount":5,
+              "price":226
+            },
+            {
+                "id":"bt2",
+                "name":"True Elements No Added Sugar Muesli",
+                "packs":"box of 1000 gm Muesli",
+                "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit…_auto,f_auto/d85851166f594187a67174499a222eec.jpg",
+                "mrp":595,
+                "discount":18,
+                "price":488
+              },
+              {
+                "id":"bt3",
+                "name":"Saffola Masala Oats Classic Masala",
+                "packs":"packet of 500 gm Oats",
+                "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/wf4epamdbrwhyus9oz6f.jpg",
+                "mrp":207,
+                "discount":12,
+                "price":182
+              },
+              {
+                "id":"bt4",
+                "name":"Bagrry's Protein Muesli with Whey Protein, Almonds & Oats Chocolate",
+                "packs":"box of 500 gm Muesli",
+                "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/qhx74omy5xngtvrrzeqm.png",
+                "mrp":425,
+                "discount":11,
+                "price":377
+              },  {
+                "id":"bt5",
+                "name":"Tata Soulfull Ragi Bites Fills Choco",
+                "packs":"box of 250 gm Snacks",
+                "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/lhq5hsn6pp7c1xzgpsvr.jpg",
+                "mrp":199,
+                "discount":5,
+                "price":189
+              },  {
+                "id":"bt6",
+                "name":"Bagrry's Crunchy No Added Sugar Muesli",
+                "packs":"jar of 1000 gm Muesli",
+                "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/opj6r4zzusf5654ubggc.jpg",
+                "mrp":599,
+                "discount":6,
+                "price":563
+              },  {
+                "id":"bt7",
+                "name":"Saffola Masala Oats Peppy Tomato",
+                "packs":"packet of 500 gm Oats",
+                "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/oxerorszcvlk29l5o80z.jpg",
+                "mrp":207,
+                "discount":12,
+                "price":182
+              },  {
+                "id":"bt8",
+                "name":"Bagrry's Crunchy Fruit and Nut with Cranberries Muesli",
+                "packs":"jar of 1 kg Muesli",
+                "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/xmxwitpnxovukwp1mtqm.jpg",
+                "mrp":525,
+                "discount":11,
+                "price":467
+              },  {
+                "id":"bt9",
+                "name":"True Elements Fruit and Nut Muesli",
+                "packs":"box of 1000 gm Muesli",
+                "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit…_auto,f_auto/bc042477100447a38bd7c1506d5728ae.jpg",
+                "mrp":595,
+                "discount":14,
+                "price":512
+              },  {
+                "id":"bt7",
+                "name":"Saffola Masala Oats Peppy Tomato",
+                "packs":"packet of 500 gm Oats",
+                "image":"https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/oxerorszcvlk29l5o80z.jpg",
+                "mrp":207,
+                "discount":12,
+                "price":182
+              }
+            ]
+        },
+        
         {
-        "id":"fb2",
-        "name":"J&J Baby",
-        "image":"https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
+          "featured_brands": [
+            {
+              "id": "fb1",
+              "name": "Zandu",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
+            },
+            {
+              "id": "fb2",
+              "name": "J&J Baby",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/e15f2fac-5e41-4e78-8554-1863313e642c.png"
+            },
+            {
+              "id": "fb3",
+              "name": "HealthKart",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/ae2de174-0bbe-48f8-b2ae-902c84fba5db.png"
+            },
+            {
+              "id": "fb4",
+              "name": "Zandu",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit…o,f_auto/3e371a6d-e3de-447f-aedc-c0e3d8a1d9c9.png"
+            },
+            {
+              "id": "fb5",
+              "name": "Detol",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/6dbc627e-901f-47c0-9915-02a1536d063f.png"
+            },
+            {
+              "id": "fb6",
+              "name": "Dr.Morphen",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit…o,f_auto/89856dcd-48cb-49f8-bf52-9f7ceaf0bbec.png"
+            },
+            {
+              "id": "fb7",
+              "name": "Bournvita",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit…o,f_auto/0d4b38c2-6327-41ce-bdc8-af0cd46a1817.jpg"
+            },
+            {
+              "id": "fb8",
+              "name": "Veet",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit…o,f_auto/0d4b38c2-6327-41ce-bdc8-af0cd46a1817.jpg"
+            },
+            {
+              "id": "fb9",
+              "name": "Tejasya",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit…o,f_auto/57686ffd-2e05-417e-bf36-1e9fbd464eb5.png"
+            }
+          ]
+        },
+
+        {
+          "popular_Combo_Deals": [
+            {
+              "id": "pc1",
+              "name": "Tata 1mg Diabetes Care Combo Pack for Cholesterol & Blood Sugar Management",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/38b86c6a33f744afac80ed36d4bb87ba.jpg",
+              "packs": "Combo pack of 3 Packs",
+              "mrp": 1085,
+              "discount": 50,
+              "price": 539
+            },
+            {
+              "id": "pc2",
+              "name": "Accu-Chek Combo Pack of Active 50 Test Strip & 2 Pack of Softclix Lancet",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/c2sw0gi2dw4cwdf1ecjp.jpg",
+              "packs": "Combo pack of 2 Packs",
+              "mrp": 1299,
+              "discount": 8,
+              "price": 1194
+            },
+            {
+              "id": "pc3",
+              "name": "Immunity Care Combo of 1mg Panch Tulsi 30ml Drops and Patanjali Ayurveda Giloy Ghanvati 60 Tablet",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/38b86c6a33f744afac80ed36d4bb87ba.jpg",
+              "packs": "Combo pack of 4 Packs",
+              "mrp": 335,
+              "discount": 26,
+              "price": 248
+            },
+            {
+              "id": "pc4",
+              "name": "Immunity Care Combo of 1mg Panch Tulsi 30ml Drops and Patanjali Ayurveda Giloy Ghanvati 60 Tablet",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/qir6i2zlhzeddxa4mqt0.jpg",
+              "packs": "Combo pack of 5 Packs",
+              "mrp": 1085,
+              "discount": 10,
+              "price": 539
+            },
+            {
+              "id": "pc5",
+              "name": "Pain Relief Combo of Dr Ortho Oil 120ml and Organic India Turmeric Formula 60 Veg Capsule",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/qdkxnbhl24dgn02m7fc4.jpg",
+              "packs": "Combo pack of 2 bottles",
+              "mrp": 599,
+              "discount": 10,
+              "price": 531
+            },
+            {
+              "id": "pc6",
+              "name": "Anti-oxidants Combo of Organic India Lemon Ginger Tulsi Green Tea 25 Tea Bag and Dabur Honey 1kg",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/qdkxnbhl24dgn02m7fc4.jpg",
+              "packs": "Combo pack of 2 bottles",
+              "mrp": 669,
+              "discount": 11,
+              "price": 539
+            },
+            {
+              "id": "pc7",
+              "name": "Oral Care Combo of Listerine Mouth Wash Cool Mint 500ml and Sensodyne Repair & Protect Toothpaste 100gm",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/qdkxnbhl24dgn02m7fc4.jpg",
+              "packs": "Combo pack of 2 bottles",
+              "mrp": 550,
+              "discount": 10,
+              "price": 496
+            },
+            {
+              "id": "pc8",
+              "name": "Revital Combo Pack of Revital H 30 Capsule and Revital H Woman 30 Tablet",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/hkivk33molknvlppjtkg.jpg",
+              "packs": "Combo pack of 2 packs",
+              "mrp": 670,
+              "discount": 10,
+              "price": 599
+            },
+            {
+              "id": "pc8",
+              "name": "Dr. Reckeweg Hair Care Combo Pack of Lycopodium Dilution 30CH 11ml & R89 Hair Care Drop 30ml",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/yjf3zipjv3bzx1xdv4xo.jpg",
+              "packs": "Combo pack of 2 bottles",
+              "mrp": 445,
+              "discount": 10,
+              "price": 394
+            },
+            {
+              "id": "pc9",
+              "name": "Bayer Combo Pack of Supradyn Daily Multivitamin 15 Tablet & Saridon 10 Tablet",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/ylfuylfxrh0cvzrxopf3.jpg",
+              "packs": "Combo pack of 2 strips",
+              "mrp": 97,
+              "discount": 8,
+              "price": 89
+            },
+            {
+              "id": "pc10",
+              "name": "Combo Pack of Zincovit Tablet & Limcee Chewable Tablet Orange (15 Each)",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/qehyx880yecto35fwmen.jpg",
+              "packs": "Combo pack of 2 strips",
+              "mrp": 130,
+              "discount": 41,
+              "price": 112
+            }
+          ]
+        },
+
+        {
+          "Personal_care": [
+            {
+              "id": "pcr1",
+              "name": "Skin Care",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/n8ocwaqoerqke0nbrtrr.png"
+            },
+            {
+              "id": "pcr2",
+              "name": "Sexual Wellness",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/myhagyzdangsd1ibwotm.png"
+            },
+            {
+              "id": "pcr3",
+              "name": "Hair Care",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/kgdli04gm2hcjgel553r.png"
+            },
+            {
+              "id": "pcr4",
+              "name": "Baby Care",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/u5awkf56gidlnhuybvqh.png"
+            },
+            {
+              "id": "pcr5",
+              "name": "Women Care",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/yuam4evyvw7adyhqixzv.png"
+            },
+            {
+              "id": "pcr6",
+              "name": "Elderly Care",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/d7ocpsrtehsla83kbxqs.png"
+            },
+            {
+              "id": "pcr7",
+              "name": "Men Care",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/pa32gmnhdlk0ownn9b7p.png"
+            },
+            {
+              "id": "pcr8",
+              "name": "Oral Care",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/et2g6nylqsdndeutxloi.png"
+            },
+            {
+              "id": "pcr9",
+              "name": "Pet Care",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/jmdy8kha8pnlrjz9veue.png"
+            }
+          ]
+        },
+       
+
+       
+        {
+          "Biotin": [
+            {
+              "id": "B1",
+              "name": "Perfectil Skin, Hair, Nail Supplement Tablet",
+              "packs": "strip of 30 tablets",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/r33qnfrme9xfozrw5gwk.jpg",
+              "mrp": 625,
+              "discount": 25,
+              "price": 469
+            },
+            {
+              "id": "B2",
+              "name": "HealthKart HK Vitals Biotin Tablet",
+              "packs": "bottle of 90 tablets",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/twpuzix7nrwivbtg0n80.jpg",
+              "mrp": 699,
+              "discount": 28,
+              "price": 499
+            },
+            {
+              "id": "B3",
+              "name": "Tata 1mg Hair, Skin & Nails Supreme Biotin Capsule with Collagen, Zinc, Iron and Vitamin B",
+              "packs": "bottle of 60 capsules",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit…_auto,f_auto/73c2b656962348769f7f93a72090dcaa.jpg",
+              "mrp": 699,
+              "discount": 41,
+              "price": 409
+            },
+            {
+              "id": "B4",
+              "name": "Power Gummies - Hair & Nail Vitamins with Biotin",
+              "packs": "bottle of 60 gummies",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit…_auto,f_auto/5a34b45b7f284dd5ae17710100f5b0fa.jpg",
+              "mrp": 1200,
+              "discount": 25,
+              "price": 900
+            },
+            {
+              "id": "B5",
+              "name": "Wellwoman Hairfollic Hair Supplement Tablet",
+              "packs": "box of 30 tablets",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/da53ml3uc1gpctmhanfm.jpg",
+              "mrp": 708,
+              "discount": 25,
+              "price": 531
+            },
+            {
+              "id": "B6",
+              "name": "Carbamide Forte Biotin 10,000mcg Tablet",
+              "packs": "bottle of 120 tablets",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/g8sutaon3j3kmg9eeipv.jpg",
+              "mrp": 795,
+              "discount": 31,
+              "price": 549
+            },
+            {
+              "id": "B7",
+              "name": "Follihair AMPM Tablet Gluten Free",
+              "packs": "strip of 20 tablets",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/x5rhcay5vmkz4ii9o786.jpg",
+              "mrp": 399,
+              "discount": 9,
+              "price": 360
+            },
+            {
+              "id": "B8",
+              "name": "H-Vit Biotin Tablet",
+              "packs": "strip of 10 tablets",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit,q_auto,f_auto/cropped/nw5drim4tiztqzkp6dz8.jpg",
+              "mrp": 52,
+              "discount": 15,
+              "price": 44
+            },
+            {
+              "id": "B9",
+              "name": "Dr. Morepen Biotin+ Advanced Tablet for Healthy Hair, Skin & Nails Tablet",
+              "packs": "bottle of 60 tablets",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit…_auto,f_auto/8d5cadb9e1b148cb84e525ce8be40e76.jpg",
+              "mrp": 999,
+              "discount": 45,
+              "price": 549
+            },
+            {
+              "id": "B10",
+              "name": "Power Gummies - Hair & Nail Vitamins with Biotin",
+              "packs": "box of 120 gummies",
+              "image": "https://onemg.gumlet.io/a_ignore,w_380,h_380,c_fit…_auto,f_auto/87761c9a93604ea4a778884faaa65713.jpg",
+              "mrp": 2300,
+              "discount": 25,
+              "price": 1725
+            }
+          ]
+        },
+       
+        {
+          "homeopathy": [
+            {
+              "id": "mm1",
+              "name": "Dr Reckeweg",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/iy3hwyaywbcqhrrqxdv6.png"
+            },
+            {
+              "id": "mm2",
+              "name": "SBL homeopathy",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/otbucp1ifveqrjvfd65j.png"
+            },
+            {
+              "id": "mm3",
+              "name": "BJAIN homeopathy",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/n4uo5xa4vxadylucybu1.png"
+            },
+            {
+              "id": "mm4",
+              "name": "DR WILLMAR SCHWABE INDIA",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/nksym712wf4y4b9p1k6j.png"
+            },
+            {
+              "id": "mm5",
+              "name": "ADELhomeopathy",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/b6fcbfc4-40ec-47b6-9837-c44819a5ba54.png"
+            },
+            {
+              "id": "mm6",
+              "name": "Baksons",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/kl9hlgtqytfgfqb6baa5.png"
+            },
+            {
+              "id": "mm7",
+              "name": "Baksons",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/izx9mv71op8u479tjb2h.png"
+            },
+            {
+              "id": "mm8",
+              "name": "Dr Batra's homeopathy",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/izx9mv71op8u479tjb2h.png"
+            },
+            {
+              "id": "mm9",
+              "name": "HAPDCO",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/jcnry9ai50sxgttj3rdq.png"
+            },
+            {
+              "id": "mm10",
+              "name": "Wheezaal",
+              "image": "https://onemg.gumlet.io/a_ignore,w_150,h_150,c_fit,q_auto,f_auto/pujzqz0sfqkfezbb7x3o.png"
+            }
+          ]
         }
-    
-      ]
-     
+     ]
+
 }
