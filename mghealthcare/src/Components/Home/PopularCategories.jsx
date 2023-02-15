@@ -13,7 +13,7 @@ const GetData = () => {
   });
 };
 
-export const FeatureBrands = () => {
+export const PopularCategories = () => {
 
 const [data,setData]=useState([])
 const [loading,setLoading] = useState(false)
@@ -26,7 +26,7 @@ const InGetData = ()=>{
     GetData()
     .then((res)=>{
         console.log("array of object",res)
-        setData(()=>res.data[3].featured_brands)
+        setData(()=>res.data[0].popular_categories)
         setLoading(false)
     })
     .catch((err)=>{
@@ -34,7 +34,7 @@ const InGetData = ()=>{
         setLoading(false)
     })
 }
-let box = document.querySelector("#FBS")
+let box = document.querySelector("#PCS")
 // console.log("box",box)
 const buttonPressRev = ()=>{
 let width =  box.clientWidth
@@ -59,11 +59,11 @@ const buttonPressNext =()=>{
             fontSize: "16px",
             lineHeight: "22.8571px",
           }} 
-        > Feature  Brands </h3>
+        > Popular categories </h3>
     <div className={styles.box}>
         <div onClick={buttonPressRev}><FontAwesomeIcon  className={styles.icon} icon={faChevronLeft}/></div>
     <div className={styles.container} style={{width:"100%"}}>
-        <div className="one" id="FBS"  style={{scrollBehavior:"smooth",background:"white"}}>
+        <div className="one" id="PCS"  style={{scrollBehavior:"smooth",background:"white"}}>
         {
             loading===false ? data.map((el)=>(
                 <div key={el.id}>
@@ -81,4 +81,4 @@ const buttonPressNext =()=>{
 };
 
 
-export default FeatureBrands
+export default PopularCategories
