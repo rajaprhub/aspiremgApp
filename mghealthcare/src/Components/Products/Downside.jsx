@@ -12,7 +12,8 @@ const Downside = ({data,HandleSort})=>{
  return(
     <>
        <div className={styles.header}>
-         <p>All Products</p>
+         <p>All Products</p>  
+
         <div>
          <span className={styles.sort}>Sort By</span>
          <select onChange={(e)=>HandleSort(e)}>
@@ -24,9 +25,10 @@ const Downside = ({data,HandleSort})=>{
          <option></option>
         </select>
        </div>
+
       </div>
 
-       <AllProducts data={data} HandleSort={HandleSort} />
+       <AllProducts data={data}/>
      
     </>
   )

@@ -16,9 +16,58 @@ import Form from "react-bootstrap/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
+import { CartContext } from '../Contexts/CartContext'
+import { saveData } from "../Utils/accessLocalstorage"
+
 
 const ProductCard = ({  product, loader }) => {
   const [value, setValue] = useState("1");
+
+  const {userCart,setUserCart} = React.useContext(CartContext)
+  
+  const HandleBagAdd = ()=>{
+  
+  let bag = {
+    id: product.id,
+    adminId: product.adminId,
+    name: product.name,
+    quantity: product.quantity || 1,
+    price: product.price,
+    packs:product.packs,
+    discount:product.discount,
+    mrp:product.mrp,
+    total_price: product.price*product.quantity|| product.price,
+    status: "placed"
+  }
+  // ----------------------------------------------------
+  
+  let arr = []
+  if(userCart.cart!=undefined){
+
+  let x = userCart.cart
+  let y = true
+ 
+    for(let j=0; j<x.length; j++){
+          if(bag.id==x[j].id){
+            x[j].quantity = Number(x[j].quantity)+1
+              arr.push(x[j])
+              y = false
+          }else{
+            arr.push(x[j])
+          }
+      }
+
+   if(y){
+        arr.push(bag)
+      }
+      // ------------------------------------
+    }
+  
+  
+  setUserCart({...userCart,cart:arr})
+  saveData("Cart",{...userCart,cart:arr})
+    }
+
 
 
 return (
@@ -167,7 +216,7 @@ return (
                 >{`of ${product.stock} ${product.name}`}</Text>
               </Flex>
               <Button 
-              className={styles.addToCart}
+              className={styles.addToCart}  onClick={HandleBagAdd}
               >ADD TO CART</Button>
             </Box>
            
