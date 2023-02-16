@@ -6,7 +6,7 @@ import { useState } from "react"
 
 
 
-const RightSide = ({data,HandleSort})=>{
+const Downside = ({data,HandleSort})=>{
 
  
  return(
@@ -32,4 +32,4 @@ const RightSide = ({data,HandleSort})=>{
   )
 }
 
-export default RightSide
+export default Downside

@@ -1,1 +1,0 @@
-# one_mg_store

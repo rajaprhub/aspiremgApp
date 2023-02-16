@@ -4,7 +4,7 @@ import axios from "axios"
 import { useSearchParams } from "react-router-dom"
 
 import TopBrands from "../Components/Products/TopBrands"
-import RightSide from "../Components/Products/Downside"
+import Downside from "../Components/Products/Downside"
 import Pagination from "../Components/Products/Pagination"
 
 
@@ -12,8 +12,8 @@ const GetData = (page,sort)=>{
   let sortby= null
   let order = null
   if(sort=="rating"){
-    sortby = "rating"
-  order = "desc"
+     sortby = "rating"
+     order = "desc"
   }
   else if(sort=="HL"){
       sortby = "price"
@@ -53,17 +53,15 @@ export const ProductsPage = () => {
   const initialState = searchParams.get("sort")
   const [sort,setSort] = useState(initialState || "")
 
-  
     const HandlePage = (val)=>{
         setPage((prev)=>prev+val)
      }
 
-    const InGetData = ()=>{
+     const InGetData = ()=>{
       setIsLoading(true)
-      GetData(page,sort,searchParams)
+      GetData(page,sort)
       .then((res)=>{
           setIsLoading(false)
-      
           let x = res.headers["x-total-count"]
           x = Math.ceil(x/12)
           setTotalPages(x)
@@ -72,26 +70,21 @@ export const ProductsPage = () => {
        .catch((err)=>{
           console.log(err)
           setIsLoading(false)
-      })
-  }
+       })
+    }
   
-
-  
-useEffect(()=>{
-  InGetData()
-  },[page,sort])
+     useEffect(()=>{
+        InGetData()
+     },[page,sort])
     
-   const HandleSort = (e)=>{
-  setSort(e.target.value)
+     const HandleSort = (e)=>{
+         setSort(e.target.value)
       }
 
-      
-useEffect(() => {
-  const params = { sort
-  };
-  
-  setSearchParams(params);
-}, [sort]);
+     useEffect(() => {
+      const params = { sort};
+      setSearchParams(params);
+    }, [sort]);
 
 
 
@@ -100,7 +93,7 @@ useEffect(() => {
          <TopBrands/>
          <h1> ProductsPage</h1>
           
-         <RightSide data={data} HandleSort={HandleSort}/>
+         <Downside data={data} HandleSort={HandleSort}/>
          <Pagination HandlePage={HandlePage} totalPages={totalPages} page={page}/>
     
     </>

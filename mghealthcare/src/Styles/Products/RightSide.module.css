@@ -1,5 +1,10 @@
 .header{
-    display:flex; margin-top: 40px;margin-left:20px;  justify-content: space-between; align-items: center;
+    display:flex; 
+    margin-top: 40px;margin-left:20px;
+      justify-content: space-between; 
+      align-items: center;
+      width: 95%;
+      margin: auto;
 }
 
 .header p {font-size: 20px;}

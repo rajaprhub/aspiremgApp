@@ -645,7 +645,7 @@
     "products": [
       {
         "id": "sc1",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,c_fit,q_auto,h_150,f_auto/963edfc93b2f4f319f6f6d08df1cece8/tetmosol-medicated-soap.jpg",
         "name": "Tetmosol Medicated Soap",
         "stock": 40,
@@ -685,7 +685,7 @@
       },
       {
         "id": "sc2",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/h_150,c_fit,f_auto,q_auto,w_150/lr1qvaffxz9ldjqks6rn/cetaphil-gentle-skin-cleanser-dry-to-normal-sensitive-skin.jpg",
         "name": "Cetaphil Gentle Skin Cleanser Dry to Normal, Sensitive Skin",
         "stock": 50,
@@ -724,7 +724,7 @@
       },
       {
         "id": "sc3",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/c_fit,w_150,h_150,f_auto,q_auto/uasrztrr4pej8lyoj9lq/plum-mandarin-vitamin-c-15-face-serum.jpg",
         "name": "Plum Mandarin & Vitamin C 15% Face Serum",
         "stock": 78,
@@ -763,7 +763,7 @@
       },
       {
         "id": "sc4",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/c_fit,w_150,h_150,f_auto,q_auto/tmcl9ndskbiezitxdy5y/ahaglow-advanced-skin-rejuvenating-face-wash.jpg",
         "name": "Ahaglow Advanced Skin Rejuvenating Face Wash",
         "stock": 90,
@@ -800,7 +800,7 @@
       },
       {
         "id": "sc5",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/c_fit,w_150,h_150,f_auto,q_auto/kryuwtbpvmsceejdkni2/physiogel-hypoallergenic-daily-moisture-therapy-body-lotion.jpg",
         "name": "Physiogel Hypoallergenic Daily Moisture Therapy Body Lotion",
         "stock": 67,
@@ -839,7 +839,7 @@
       },
       {
         "id": "sc6",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/c_fit,w_150,h_150,f_auto,q_auto/qsxil3u8tp1rljohhkun/mamaearth-vitamin-c-face-wash.jpg",
         "name": "Mamaearth Vitamin C Face Wash",
         "stock": 77,
@@ -879,7 +879,7 @@
       },
       {
         "id": "sc7",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/cropped/rt5oa994frsh9ybbwemo/mederma-scar-gel.png",
         "name": "Mederma Scar Gel",
         "stock": 87,
@@ -913,7 +913,7 @@
       },
       {
         "id": "sc8",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/c2eac464265e488583204c45eea01e6d/acnestar-gel.jpg",
         "name": "Acnestar Gel",
         "stock": 67,
@@ -952,7 +952,7 @@
       },
       {
         "id": "sc9",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/nv9jtl907ldxbtkv88d6/biluma-cream.jpg",
         "name": "Biluma Cream",
         "stock": 63,
@@ -996,7 +996,7 @@
       },
       {
         "id": "sc10",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/uasrztrr4pej8lyoj9lq/plum-mandarin-vitamin-c-15-face-serum.jpg",
         "name": "Plum Mandarin & Vitamin C 15% Face Serum",
         "stock": 92,
@@ -1035,7 +1035,7 @@
       },
       {
         "id": "sc11",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/ivkpicxnsldr0973lsyh/nycil-cool-gulabjal-prickly-heat-talcum-powder-with-nycil-cool-herbal-50gm-free.jpg",
         "name": "Nycil Cool Gulabjal Prickly Heat Talcum Powder",
         "stock": 30,
@@ -1074,7 +1074,7 @@
       },
       {
         "id": "sc12",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/830c39007a734beb8580352a8eff6cb2/tata-1mg-multipurpose-germ-protection-wipes-72.jpg",
         "name": "Tata 1mg Multipurpose Germ Protection Wipes - 72",
         "stock": 30,
@@ -1112,7 +1112,7 @@
       },
       {
         "id": "sc13",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/cropped/zjnx1eww9mai4njchife/wow-skin-science-brighitening-vitamin-c-face-wash.jpg",
         "name": "WOW Skin Science Brighitening Vitamin C Face Wash",
         "stock": 40,
@@ -1150,7 +1150,7 @@
       },
       {
         "id": "sc14",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/nookeu7k5dqnoeroz53e/luciara-anti-stretch-marks-cream.jpg",
         "name": "Luciara Anti Stretch Marks Cream",
         "stock": 50,
@@ -1189,7 +1189,7 @@
       },
       {
         "id": "sc15",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/nookeu7k5dqnoeroz53e/luciara-anti-stretch-marks-cream.jpg",
         "name": "Luciara Anti Stretch Marks Cream",
         "stock": 50,
@@ -1228,7 +1228,7 @@
       },
       {
         "id": "sc16",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/nookeu7k5dqnoeroz53e/luciara-anti-stretch-marks-cream.jpg",
         "name": "C-Vit Facial Liposomal Serum",
         "stock": 46,
@@ -1267,7 +1267,7 @@
       },
       {
         "id": "sc17",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/cropped/tjkchcq5uqhqh2eyrr3b/ahaglow-s-foaming-face-wash.jpg",
         "name": "Ahaglow S Foaming Face Wash",
         "stock": 81,
@@ -1306,7 +1306,7 @@
       },
       {
         "id": "sc18",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/dfe1a76018ac43e1b4f4df6e46dee742/skineasi-comfoot-anti-shoe-bite-gel-20gm-each.jpg",
         "name": "SkinEasi Comfoot Anti-Shoe Bite Gel (20gm Each)",
         "stock": 52,
@@ -1344,7 +1344,7 @@
       },
       {
         "id": "sc19",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/b8b64c7d29664c97a886444f8648cd20/bioderma-atoderm-intensive-baume-ultra-soothing-balm.jpg",
         "name": "Bioderma Atoderm Intensive Baume Ultra-Soothing Balm",
         "stock": 19,
@@ -1382,7 +1382,7 @@
       },
       {
         "id": "sc20",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/w_150,f_auto,c_fit,h_150,q_auto/pbdvgnjzzecoexmcryzs/plum-green-tea-pore-cleansing-face-wash.jpg",
         "name": "Plum Green Tea Pore Cleansing Face Wash",
         "stock": 19,
@@ -1420,7 +1420,7 @@
       },
       {
         "id": "sc21",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/udvui669qqvium77njrk/boroplus-antiseptic-cream.jpg",
         "name": "Boroplus Antiseptic Cream",
         "stock": 30,
@@ -1474,7 +1474,7 @@
       },
       {
         "id": "sc22",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/lqzdkuwo6ore3eiqfwd7/mamaearth-ubtan-face-wash.jpg",
         "name": "Mamaearth Ubtan Face Wash",
         "stock": 30,
@@ -1513,7 +1513,7 @@
       },
       {
         "id": "sc23",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/lr1qvaffxz9ldjqks6rn/cetaphil-gentle-skin-cleanser-dry-to-normal-sensitive-skin.jpg",
         "name": "Cetaphil Gentle Skin Cleanser Dry to Normal, Sensitive Skin",
         "stock": 34,
@@ -1552,7 +1552,7 @@
       },
       {
         "id": "sc24",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/yrfcinqkjbr7gxqatrs5/dettol-intense-cool-bathing-soap-bar-75gm-buy-3-get-1-free.jpg",
         "name": "Dettol Intense Cool Bathing Soap Bar 75gm (Buy 3 Get 1 Free)",
         "stock": 36,
@@ -1593,7 +1593,7 @@
       },
       {
         "id": "sc25",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/cropped/cnndmskfmcldpwhljwcp/himalaya-herbals-purifying-neem-face-wash.jpg",
         "name": "Himalaya Herbals Purifying Neem Face Wash",
         "stock": 46,
@@ -1632,7 +1632,7 @@
       },
       {
         "id": "sc26",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/kegp2hkid1dtylm5ekr0/biluma-advance-skin-brightening-lotion.jpg",
         "name": "Biluma Advance Skin Brightening Lotion",
         "stock": 35,
@@ -1670,7 +1670,7 @@
       },
       {
         "id": "sc27",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/qz6ecewryas05x7gnv33/physiogel-hypoallergenic-calming-relief-a.i.-lotion.jpg",
         "name": "Physiogel Hypoallergenic Calming Relief A.I. Lotion",
         "stock": 30,
@@ -1721,7 +1721,7 @@
       },
       {
         "id": "sc28",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/lr1qvaffxz9ldjqks6rn/cetaphil-gentle-skin-cleanser-dry-to-normal-sensitive-skin.jpg",
         "name": "Cetaphil Gentle Skin Cleanser Dry to Normal, Sensitive Skin",
         "stock": 35,
@@ -1761,7 +1761,7 @@
       },
       {
         "id": "sc29",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/061d1bd1ccff41a7bb6c575166985a61/vaseline-intensive-care-body-deep-moisture-lotion.jpg",
         "name": "Vaseline Intensive Care Body Deep Moisture Lotion",
         "stock": 25,
@@ -1799,7 +1799,7 @@
       },
       {
         "id": "sc30",
-        "adminId": "mdmonu",
+        "adminId": "mghealth",
         "image": "https://onemg.gumlet.io/images/q_auto,f_auto,c_fit,h_150,w_150/cropped/lop6op3bngi576w4noc5/vicco-turmeric-skin-cream.jpg",
         "name": "Vicco Turmeric Skin Cream",
         "stock": 45,
