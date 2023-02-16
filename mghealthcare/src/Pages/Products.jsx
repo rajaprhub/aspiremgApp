@@ -42,7 +42,6 @@ const GetData = (page,sort)=>{
 }
 
 
-
 export const ProductsPage = () => {
 
   const [data,setData] = useState([])
@@ -92,7 +91,6 @@ export const ProductsPage = () => {
     <>
          <TopBrands/>
          <h1> ProductsPage</h1>
-          
          <Downside data={data} HandleSort={HandleSort}/>
          <Pagination HandlePage={HandlePage} totalPages={totalPages} page={page}/>
     

@@ -1,7 +1,7 @@
 
 import axios from "axios"
 import React, { useState } from "react"
-import styles from '../../Styles/PopularCategories.module.css'
+import styles from '../../Styles/Home/PopularCategories.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 

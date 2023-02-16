@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
-import styles from "../../Styles/TrendingNow.module.css";
+import styles from "../../Styles/Home/TrendingNow.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
