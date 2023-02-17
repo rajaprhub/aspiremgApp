@@ -382,7 +382,7 @@ export const Footer = () => {
             // textAlign="center"
             className={styles.copy}
           >
-            © 2022 Bloommedplus. All rights reserved. In compliance with Drugs and
+            © 2022 MgHealthCare. All rights reserved. In compliance with Drugs and
             Cosmetics Act, 1940 and Drugs and Cosmetics Rules, 1945, we don't
             process requests for Schedule X and other habit forming drugs.
           </Text>

@@ -7,8 +7,21 @@ import styles from '../Styles/Navbar.module.css'
 import { Input,InputRightElement,Button,InputGroup } from '@chakra-ui/react'
 import { useState,useContext } from "react"
 
+import { CartContext } from "../Contexts/CartContext";
 
 export const Navbar = () => {
+
+  const { userCart } = useContext(CartContext);
+  const [cartItem, setCartItem] = useState(0);
+
+  React.useEffect(() => {
+    if(userCart.cart){
+      setCartItem(userCart.cart.length);
+    }
+  }, [userCart]);
+
+
+
   return (
     <div> 
   
@@ -25,11 +38,110 @@ export const Navbar = () => {
    <div style={{width:"35px",cursor:"pointer"}}> 
      <Link to='/cart' style={{background:'white', display: 'flex',gap:'5px',textDecoration:"none"}}>
       <FontAwesomeIcon style={{color:"black",background:"white"}} icon={faCartShopping}/>
-      <sup style={{background:"white"}}> cart</sup>
+      <sup style={{background:"white"}}> {cartItem}</sup>
      </Link>
    </div>
     <div>Need Help?</div>
   </div>
+
+  <hr className={styles.hr} />
+
+<div className={styles.middle}>
+  <div className={styles.left}>
+    <div className={styles.delhi}>
+      <div>
+        <FontAwesomeIcon
+          icon={faLocationDot}
+          className={styles.dot}
+        />{" "}
+        <span style={{ fontWeight: "bold", marginLeft: "5px" }}>
+          {" "}
+          New Delhi
+        </span>
+      </div>
+      <div>
+        <FontAwesomeIcon
+          icon={faLocationCrosshairs}
+          className={styles.cross}
+        />
+      </div>
+    </div>
+
+    <div className={styles.Search}>
+      <input
+      style={{boxShadow:"none"}}
+        className={styles.input}
+        onKeyUp={"HandleSearchKey"}
+        onChange={"HandleSearchChange"}
+        value={"search"}
+        type="text"
+        placeholder="Searc for Medicines and Health Products"
+      />
+      <Link to="/products/skincare">
+        <FontAwesomeIcon
+          className={styles.glass}
+          icon={faMagnifyingGlass}
+        />
+      </Link>
+    </div>
+  </div>
+
+  <div className={styles.right}>
+    <div className={styles.quick}>
+        <p style={{ float: "right", background: "white" }}>
+          QUICK BUY! Get 25% off on  medicines*
+        </p>
+    </div>
+    <div style={{ background: "white" }}>
+      <button className={styles.order}>Quick order</button>
+    </div>
+  </div>
+</div>
+
+<hr className={styles.hr} />
+
+         <div className={styles.bottom}>
+            <div>
+              <span>Health Care Resource</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+            <div>
+              <span>Vitamins & Nutritions</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+            <div>
+              <span>diabetes</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+            <div>
+              <span>Healthcare Devices</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+            <div>
+              <span>Personal Care</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+            <div>
+              <span>Health Conditions</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+            <div>
+              <span>Ayurveda Products</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+            <div>
+              <span>Homeopathy</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+            <div>
+              <span>Featured</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+            <div>
+              <span>Covid Essentials</span>{" "}
+              <FontAwesomeIcon className={styles.down} icon={faChevronDown} />
+            </div>
+          </div>
 
     </div>
   )

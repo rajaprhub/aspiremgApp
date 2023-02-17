@@ -8,6 +8,7 @@ import {PopularCombo} from "../Components/Home/PopularCombo"
 import  PersonalCare  from "../Components/Home/PersonalCare"
 import { Biotin } from "../Components/Home/Biotin"
 import Homeopathy from "../Components/Home/Homeopathy"
+import { Banners } from "../Components/Home/Banners"
 
 import React from 'react'
 
@@ -15,8 +16,14 @@ export const HomePage = () => {
   return (
     <>
          
-          
+           
+
             <main>
+
+              <div style={{marginTop:"10px"}}> 
+                 <Banners/>
+              </div>
+
               <div style={{marginTop:"10px"}}> 
                  <PopularCategories/>
               </div>

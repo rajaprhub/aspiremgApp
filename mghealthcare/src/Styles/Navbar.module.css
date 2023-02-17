@@ -21,12 +21,35 @@
 /* middle---------------------------------------- */
 
 
+.middle{display:flex; margin-top: 5px; justify-content:space-between;
+     margin-right:2px; margin-left:2px;
+     width: 95%;
+     padding: 5px;
+     gap:5px;
+     margin: auto;
+     border:  transparent ;
+      background-color: white;margin-bottom: 5px;}
+
+.left{display:flex; background-color: white;  gap: 1px;       border:  transparent  ;width:50%;}
+.delhi{display:flex; justify-content: space-between; margin-left:1%; width:200px; padding:3px 7px; align-items: center; height:30px;}
+.dot{color:rgb(141, 141, 141); font-size: 15px;}
+.cross{color:rgb(141, 141, 141); font-size: 14px;}
+
+.Search{ height:36px; margin-left:3px;  display: flex; align-items: center; justify-content: space-between;width:60%; padding:0 6px;}
+.input{ padding:0 0 0px 5px;width:90%; border: 1px solid gray ;font-size: 15px; height:100%;border:none;}
+.glass{font-size: 14px; width:20px;color:green;cursor: pointer;}
+
+.right{display:flex;justify-content: space-between;  background-color: white; width:40%;align-items: center;}
+.order{background-color: #ff6f61;color:white;outline:none; border:none; border-radius:5px; font-size: 16px; padding:6px 0px;margin-left:10px; width:120px;}
+.quick{background-color: white; font-size: 14px;}
+
+.hr{border:.5px solid rgb(230, 230, 230);}
 /* ----------------------------------------------- */
 
 
-.bottom{display:flex; flex-wrap: wrap; justify-content: center;padding-bottom: 5px;  background-color: white; margin:5px 20px 20px 20px; }
+.bottom{display:flex; flex-wrap: wrap; justify-content: center;padding-bottom: 1px;  background-color: white; margin:5px 10px 10px 10px; }
 .down{color:black; font-size: 9px;background-color: white;}
-.bottom>div{margin: 5px 15px;background-color: white; display: flex; align-items: center; gap:7px;cursor: pointer;}
+.bottom>div{margin: 5px 10px;background-color: white; display: flex; align-items: center; gap:7px;cursor: pointer;}
 .bottom span{background-color: white;}
 
 
