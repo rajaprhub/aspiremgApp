@@ -11,6 +11,7 @@ import { Link } from 'react-router-dom'
 const Cart = () => {
 
 const {userCart,setUserCart}  = useContext(CartContext)
+
 const [faceValue,setFaceValue]  = React.useState(0)
 const [discount,setDiscount]  = React.useState(0)
 const [payment,setPayment]  = React.useState(0)
@@ -18,12 +19,11 @@ const [save,setSave] = React.useState(0)
 
 React.useEffect(()=>{
   if(userCart.cart!=undefined){
-
     let m = userCart.cart
     let x = 0
-    let d =0
-    let p =0
-    let s= 0
+    let d = 0
+    let p = 0
+    let s =  0
     if(m.length>0){
       for(let i=0; i<m.length;i++){
         x += Number(m[i].quantity)*Number(m[i].mrp)
@@ -37,48 +37,42 @@ React.useEffect(()=>{
   setDiscount(d)
   setPayment(p)
   setSave(s)
-  // -------------
-}
+         // -------------
+   }
 
-
-
-
-},[userCart])
+   },[userCart])
 
 const RemoveItem = (id)=>{
   let x = userCart.cart
   let newCart = []
-for(let i=0; i<x.length;i++){
-  if(x[i].id!==id){
-newCart.push(x[i])
+   for(let i=0; i<x.length;i++){
+    if(x[i].id!==id){
+    newCart.push(x[i])
   }
 }
-setUserCart({...userCart,cart:newCart})
-saveData("Cart",{...userCart,cart:newCart})
+  setUserCart({...userCart,cart:newCart})
+  saveData("Cart",{...userCart,cart:newCart})
 }
 
 
 
 
 const QuantityPlus = (id)=>{
-let x = userCart.cart
-
-for(let i=0; i<x.length;i++){
+   let x = userCart.cart
+  for(let i=0; i<x.length;i++){
   if(x[i].id===id){
     // if(Number(x[i].quantity)<4){
       x[i].quantity = Number(x[i].quantity) + 1
     // }
   }
-}
-setUserCart({...userCart,cart:x})
-saveData("Cart",{...userCart,cart:x})
-
-}
+  }
+    setUserCart({...userCart,cart:x})
+    saveData("Cart",{...userCart,cart:x})
+  }
 
 const QuantityMinus = (id)=>{
   let x = userCart.cart
-
-  for(let i=0; i<x.length;i++){
+    for(let i=0; i<x.length;i++){
     if(x[i].id===id){
       if(Number(x[i].quantity)>1){
         x[i].quantity = Number(x[i].quantity) - 1
@@ -90,24 +84,16 @@ saveData("Cart",{...userCart,cart:x})
 
 }
 
-
-
-
-  return (<>
-    
-    <>{userCart.cart===undefined ? userCart.cart.length==0:(
-
- 
-    <div className={styles.container}>
-      
-      <div className={styles.left}>
-
-<div className={styles.list}>
-{userCart.cart.length>0 && userCart.cart.map((el)=>(
-  <>
-  <div key={el.id} className={styles.child}>
+return (
    
-   <div  className={styles.flx}>
+    <>{userCart.cart===undefined ? userCart.cart.length==0:(
+     <div className={styles.container}>
+       <div className={styles.left}>
+       <div className={styles.list}>
+     {userCart.cart.length>0 && userCart.cart.map((el)=>(
+    <>
+     <div key={el.id} className={styles.child}>
+     <div  className={styles.flx}>
    <div className={styles.name}>{el.name}</div>
    <div className={styles.price}>₹{el.price}</div>
     </div>
@@ -120,7 +106,7 @@ saveData("Cart",{...userCart,cart:x})
     
     <div  className={styles.flx}>
     <div onClick={()=>RemoveItem(el.id)} style={{background:"white",cursor:"pointer"}}><FontAwesomeIcon className={styles.trash}  icon={faTrashCan}/><span style={{fontSize:"14px",background:"white",color:"rgb(151,151,151)"}}>Remove</span></div>
- <div style={{background:"white",display:"flex",alignItems:"center",gap:"6px"}}><FontAwesomeIcon className={styles.circle} onClick={()=>QuantityMinus(el.id)} icon={faCircleMinus}/> {el.quantity} <FontAwesomeIcon className={styles.circle} onClick={()=>QuantityPlus(el.id)} icon={faCirclePlus}/></div>
+     <div style={{background:"white",display:"flex",alignItems:"center",gap:"6px"}}><FontAwesomeIcon className={styles.circle} onClick={()=>QuantityMinus(el.id)} icon={faCircleMinus}/> {el.quantity} <FontAwesomeIcon className={styles.circle} onClick={()=>QuantityPlus(el.id)} icon={faCirclePlus}/></div>
     </div>
    
 
@@ -225,7 +211,6 @@ saveData("Cart",{...userCart,cart:x})
 
        )}
 
-       </>
     </>
   )
 }

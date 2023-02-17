@@ -26,7 +26,7 @@ export const Navbar = () => {
     <div> 
   
   <div className={styles.top}>
-   <div><Link style={{background:"white"}} to='/'><img className={styles.logo} src="https://st2.depositphotos.com/3878061/47821/i/450/depositphotos_478213688-stock-photo-neon-icon-shopping-cart-wheels.jpg" alt="logo"/></Link></div>
+   <div><Link style={{background:"white"}} to='/'><img className={styles.logo} src="https://www.1mg.com/images/tata_1mg_logo.svg" alt="logo"/></Link></div>
    <div className={styles.medicine}>MEDICINES</div>
    <div><span className={styles.head}>LAB TESTS  </span> <span style={{fontSize:"12px"}} className={styles.safe}>SAFE</span></div>
    <div className={styles.head}>CONSULT DOCTORS</div>

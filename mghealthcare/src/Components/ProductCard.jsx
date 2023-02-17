@@ -21,13 +21,11 @@ import { saveData } from "../Utils/accessLocalstorage"
 
 
 const ProductCard = ({  product, loader }) => {
-  const [value, setValue] = useState("1");
-
+ 
   const {userCart,setUserCart} = React.useContext(CartContext)
   
   const HandleBagAdd = ()=>{
-  
-  let bag = {
+    let bag = {
     id: product.id,
     adminId: product.adminId,
     name: product.name,
@@ -43,11 +41,9 @@ const ProductCard = ({  product, loader }) => {
   
   let arr = []
   if(userCart.cart!=undefined){
-
-  let x = userCart.cart
-  let y = true
- 
-    for(let j=0; j<x.length; j++){
+   let x = userCart.cart
+   let y = true
+     for(let j=0; j<x.length; j++){
           if(bag.id==x[j].id){
             x[j].quantity = Number(x[j].quantity)+1
               arr.push(x[j])
@@ -56,16 +52,13 @@ const ProductCard = ({  product, loader }) => {
             arr.push(x[j])
           }
       }
-
-   if(y){
+       if(y){
         arr.push(bag)
       }
       // ------------------------------------
-    }
-  
-  
-  setUserCart({...userCart,cart:arr})
-  saveData("Cart",{...userCart,cart:arr})
+   }
+      setUserCart({...userCart,cart:arr})
+      saveData("Cart",{...userCart,cart:arr})
     }
 
 

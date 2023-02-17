@@ -18,28 +18,26 @@ export const AddProducts = ({el})=>{
   const {userCart,setUserCart} = React.useContext(CartContext)
   
   const HandleBagAdd = ()=>{
-  
-  let bag = {
-    id: el.id,
-    adminId: el.adminId,
-    name: el.name,
-    quantity: el.quantity || 1,
-    price: el.price,
-    packs:el.packs,
-    discount:el.discount,
-    mrp:el.mrp,
-    total_price: el.price*el.quantity|| el.price,
-    status: "placed"
+    let bag = {
+     id: el.id,
+     adminId: el.adminId,
+     name: el.name,
+     quantity: el.quantity || 1,
+     price: el.price,
+     packs:el.packs,
+     discount:el.discount,
+     mrp:el.mrp,
+     total_price: el.price*el.quantity|| el.price,
+     status: "placed"
   }
   // ----------------------------------------------------
   
   let arr = []
+  
   if(userCart.cart!=undefined){
-
-  let x = userCart.cart
-  let y = true
- 
-    for(let j=0; j<x.length; j++){
+     let x = userCart.cart
+     let y = true
+     for(let j=0; j<x.length; j++){
           if(bag.id==x[j].id){
             x[j].quantity = Number(x[j].quantity)+1
               arr.push(x[j])
@@ -49,15 +47,15 @@ export const AddProducts = ({el})=>{
           }
       }
 
-   if(y){
+      if(y){
         arr.push(bag)
       }
       // ------------------------------------
-    }
+   }
   
   
-  setUserCart({...userCart,cart:arr})
-  saveData("Cart",{...userCart,cart:arr})
+     setUserCart({...userCart,cart:arr})
+     saveData("Cart",{...userCart,cart:arr})
     }
 
 
