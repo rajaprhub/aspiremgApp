@@ -14,7 +14,7 @@ const SingleProduct = () => {
   useEffect(() => {
     setLoader(true);
     axios
-      .get(`http://localhost:1010/products/${id}`)
+      .get(`https://mghealthcare.onrender.com/products/${id}`)
       .then(({ data }) => {
         console.log(data)
         setProduct(data);
