@@ -9,7 +9,7 @@ import { faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 const GetData = () => {
   return axios({
     method: "get",
-    baseURL: "http://localhost:1010/Landing_page",
+    baseURL: "https://mghealthcare.onrender.com/Landing_page",
   });
 };
 

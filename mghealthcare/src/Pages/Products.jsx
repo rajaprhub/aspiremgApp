@@ -33,7 +33,7 @@ const GetData = (page,sort)=>{
   }
   return axios({
       method:"get",
-      baseURL:"http://localhost:1010/products",
+      baseURL:"https://mghealthcare.onrender.com/products",
       params:  {_page:page,
              _limit:12,
              _sort:sortby,
@@ -90,7 +90,7 @@ export const ProductsPage = () => {
   return (
     <>
          <TopBrands/>
-         <h1> ProductsPage</h1>
+       
          <Downside data={data} HandleSort={HandleSort}/>
          <Pagination HandlePage={HandlePage} totalPages={totalPages} page={page}/>
     

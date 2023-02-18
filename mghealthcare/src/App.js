@@ -9,19 +9,7 @@ import axios from "axios";
 
 function App() {
 
-// async function  getdata(){
-//    let a = await fetch(`https://jsonplaceholder.typicode.com/posts`)
-//    let b = await a.json()
-//    console.log(b)
-//  }
-// useEffect( () => {
-//   getdata()
-// }, [])
 
-// useEffect(() => {
-//   axios.get(`https://jsonplaceholder.typicode.com/posts`)
-//   .then( (res)=> console.log(res))
-// }, [])
 
  return (
     <div className="App">

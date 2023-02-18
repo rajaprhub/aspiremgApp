@@ -7,7 +7,7 @@ import { faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 const GetData = ()=>{
     return axios({
         method:"get",
-        baseURL:"http://localhost:1010/TopBrands"
+        baseURL:"https://mghealthcare.onrender.com/TopBrands"
     })
 }
 
