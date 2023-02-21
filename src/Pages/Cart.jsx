@@ -8,6 +8,8 @@ import { saveData } from '../Utils/accessLocalstorage'
 import { Navbar } from '../Components/Navbar'
 import { Link } from 'react-router-dom'
 
+import Empty from "./Empty"
+
 const Cart = () => {
 
 const {userCart,setUserCart}  = useContext(CartContext)
@@ -86,7 +88,7 @@ saveData("Cart",{...userCart,cart:x})
 
 return (
    
-    <>{userCart.cart===undefined ? userCart.cart.length==0:(
+  <>{userCart.cart===undefined ?<Empty/>:userCart.cart.length==0?<Empty/>:(
      <div className={styles.container}>
        <div className={styles.left}>
        <div className={styles.list}>

@@ -34,10 +34,7 @@ const GetData = (page,sort)=>{
   return axios({
       method:"get",
       baseURL:"https://mghealthcare.onrender.com/products",
-      params:  {_page:page,
-             _limit:12,
-             _sort:sortby,
-             _order:order}
+      params:  {_page:page,_limit:12,_sort:sortby,_order:order}
   })
 }
 
