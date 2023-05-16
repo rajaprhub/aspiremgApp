@@ -68,8 +68,9 @@ export const Navbar = () => {
     </div>
 
     <div className={styles.Search}>
-      <input
-      style={{boxShadow:"none"}}
+    <Link to="/products/skincare">
+      <input 
+      //  style={{boxShadow:"none"}}
         className={styles.input}
         onKeyUp={"HandleSearchKey"}
         onChange={"HandleSearchChange"}
@@ -77,6 +78,7 @@ export const Navbar = () => {
         type="text"
         placeholder="Searc for Medicines and Health Products"
       />
+      </Link>
       <Link to="/products/skincare">
         <FontAwesomeIcon
           className={styles.glass}

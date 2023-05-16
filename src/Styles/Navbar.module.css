@@ -35,7 +35,8 @@
 .dot{color:rgb(141, 141, 141); font-size: 15px;}
 .cross{color:rgb(141, 141, 141); font-size: 14px;}
 
-.Search{ height:36px; margin-left:3px;  display: flex; align-items: center; justify-content: space-between;width:60%; padding:0 6px;}
+.Search{  height:36px; margin-left:3px;  display: flex; align-items: center; justify-content: space-between;width:60%; padding:0 6px;}
+
 .input{ padding:0 0 0px 5px;width:90%; border: 1px solid gray ;font-size: 15px; height:100%;border:none;}
 .glass{font-size: 14px; width:20px;color:green;cursor: pointer;}
 

@@ -65,11 +65,11 @@ const buttonPressNext =()=>{
     <div className={styles.container} style={{width:"100%"}}>
         <div className="one" id="PCS"  style={{scrollBehavior:"smooth",background:"white"}}>
         {
-            loading===false ? data.map((el,index)=>  
+          loading=== false ? data.map((el,index)=>  
             index == 1 ? (
-              <div key={el.id}>
+              <div style={{border:"1px solid yellowgreen"}} key={el.id}>
                 <Link to="/products/skincare">
-                  <img src={el.image} alt={el.image} />
+                  <img style={{border:"1px solid green",borderRadius:"5px"}}  src={el.image} alt={el.image} />
                 </Link>
                 <p>{el.name}</p>
               </div>
